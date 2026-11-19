@@ -39,6 +39,7 @@ https://raw.githubusercontent.com/haiwanai/free-nodes/main/sub.txt
 - **安全风险**：节点由陌生人搭建，运营者能看到你走它线路的流量。不要用它登录网银、支付、主邮箱或公司账号。
 - **速度别期待**：免费节点普遍超售，晚高峰能掉到几十 KB/s。这里的延迟是测速时的连通耗时，不等于下载速度。
 - 需要稳定线路、能看流媒体、能稳用 AI 工具：主站有一份付费机场的横向对比 → <https://haiwanai.com/tuijian/>
+- 只想先试一家：夜煞云月付 10 元给 138GB，五个套餐我们逐档拆过 → <https://haiwanai.com/review/夜煞云/> · <https://haiwanlink.com/65?site=13hao>
 
 ---
 
