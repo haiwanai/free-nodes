@@ -5,7 +5,7 @@
 ![实测候选](https://img.shields.io/badge/%E5%AE%9E%E6%B5%8B%E5%80%99%E9%80%89-581-fbbf24)
 [![主站](https://img.shields.io/badge/%E4%B8%BB%E7%AB%99-haiwanai.com-00e676)](https://haiwanai.com/free-node/)
 
-> 🕛 **2026-11-19 17:11 更新** · 本轮从 581 个候选里实测筛出 **160 个可用节点**，覆盖 31 个地区
+> 🕛 **2026-11-19 17:30 更新** · 本轮从 581 个候选里实测筛出 **160 个可用节点**，覆盖 31 个地区
 > 每天 **0 点与 17:30** 各实测一次，连不通的节点直接删掉，不留在订阅里凑数。
 
 ---
@@ -29,7 +29,7 @@ https://raw.githubusercontent.com/haiwanai/free-nodes/main/sub.txt
 | 镜像 | 用法 |
 |:---|:---|
 | ghfast.top | `https://ghfast.top/https://raw.githubusercontent.com/haiwanai/free-nodes/main/sub.yaml` · `https://ghfast.top/https://raw.githubusercontent.com/haiwanai/free-nodes/main/sub.txt` |
-| jsDelivr | `https://cdn.jsdelivr.net/gh/haiwanai/free-nodes@main/sub.yaml` · `https://cdn.jsdelivr.net/gh/haiwanai/free-nodes@main/sub.txt` |
+| jsDelivr | `https://cdn.jsdelivr.net/gh/haiwanai/free-nodes@main/sub.yaml` · `https://cdn.jsdelivr.net/gh/haiwanai/free-nodes@main/sub.txt`（缓存落后几分钟，急用走上面两个） |
 
 ---
 
@@ -50,7 +50,7 @@ https://raw.githubusercontent.com/haiwanai/free-nodes/main/sub.txt
 | 本轮候选 | 581 个 |
 | 实测可用 | 160 个 |
 | 覆盖地区 | 31 个 |
-| 更新时间 | 2026-11-19 17:11（UTC+8） |
+| 更新时间 | 2026-11-19 17:30（UTC+8） |
 
 节点来自公开发布的开源清单，本仓库只做聚合、去重和逐个实测，不运营任何节点服务器，也不修改节点内容。
 
@@ -58,16 +58,16 @@ https://raw.githubusercontent.com/haiwanai/free-nodes/main/sub.txt
 
 | 地区 | 可用节点 |
 |:---|:---|
-| 🇺🇸 美国 | 45 |
-| 🇩🇪 德国 | 18 |
-| 🇮🇹 意大利 | 11 |
+| 🇺🇸 美国 | 47 |
+| 🇩🇪 德国 | 15 |
+| 🇮🇹 意大利 | 9 |
 | 🇸🇬 新加坡 | 8 |
 | 🇳🇱 荷兰 | 8 |
-| 🇫🇷 法国 | 6 |
-| 🇬🇧 英国 | 6 |
-| 🇯🇵 日本 | 5 |
+| 🇯🇵 日本 | 7 |
+| 🇬🇧 英国 | 7 |
+| 🇫🇷 法国 | 5 |
+| 🇨🇦 加拿大 | 5 |
 | 🇪🇸 西班牙 | 5 |
-| 🇹🇼 台湾 | 5 |
 
 ---
 
