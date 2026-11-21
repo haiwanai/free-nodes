@@ -1,5 +1,5 @@
 # 海湾情报局 · 每日免费节点（本机实测版）
-# 更新：2026-11-21 00:05（UTC+8）  可用：160 个
+# 更新：2026-11-21 17:30（UTC+8）  可用：160 个
 # 仅适合临时应急，勿登录重要账号。来源：free18/v2ray · ermaozi/get_subscribe · Pawdroid/Free-servers
 mixed-port: 7890
 allow-lan: false
@@ -9,15 +9,6 @@ ipv6: false
 proxies:
 - type: ss
   name: 🇯🇵 日本 01
-  server: 149.22.87.240
-  port: 443
-  password: shadowsocks
-  cipher: aes-128-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇯🇵 日本 02
   server: 149.22.87.241
   port: 443
   password: shadowsocks
@@ -26,26 +17,64 @@ proxies:
   tls: false
   skip-cert-verify: false
 - type: ss
+  name: 🇯🇵 日本 02
+  server: 149.22.87.204
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
   name: 🇯🇵 日本 03
-  server: jpa.123069.xyz
-  port: 53758
-  password: Bwlqh7GcFB
+  server: 149.22.87.240
+  port: 443
+  password: shadowsocks
   cipher: aes-128-gcm
   udp: true
   tls: false
   skip-cert-verify: false
 - type: vmess
   name: 🇭🇰 香港 01
-  server: zfd-hkv2.kunlun01dns.com
-  port: 16113
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  server: 47.244.120.197
+  port: 36703
+  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
   cipher: auto
   alterId: 0
   udp: true
   tls: false
   skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
 - type: ss
   name: 🇸🇬 新加坡 01
+  server: 149.88.106.73
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: vmess
+  name: 🇰🇷 韩国 01
+  server: 129.154.61.196
+  port: 800
+  uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
+  cipher: auto
+  alterId: 0
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡 02
+  type: ss
+  server: 51.79.228.131
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- type: ss
+  name: 🇸🇬 新加坡 03
   server: 149.88.107.74
   port: 19999
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -53,35 +82,169 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: false
-- name: 🇸🇬 新加坡 02
-  type: ss
-  server: 149.88.107.47
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 - type: ss
-  name: 🇸🇬 新加坡 03
-  server: 51.79.228.131
+  name: 🇸🇬 新加坡 04
+  server: 168.138.177.98
+  port: 56927
+  password: c11JMfCMQ3Y4aGlhMX5LrMpM13uvw+UVbjGfHP+eKkY=
+  cipher: 2022-blake3-chacha20-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇸🇬 新加坡 05
+  server: 15.235.164.133
   port: 19999
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   cipher: aes-256-gcm
   udp: true
   tls: false
   skip-cert-verify: false
-- name: 🇸🇬 新加坡 04
-  type: ss
-  server: 15.235.164.133
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 - type: ss
-  name: 🇯🇵 日本 04
-  server: 149.22.87.204
+  name: 🇺🇸 美国 01
+  server: 169.197.142.68
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇸🇬 新加坡 06
+  server: 149.88.107.47
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: vmess
+  name: 🇸🇬 新加坡 07
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  cipher: auto
+  alterId: 0
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: vmess
+  name: 🇸🇬 新加坡 08
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  cipher: auto
+  alterId: 0
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇺🇸 美国 02
+  server: 132.226.77.186
+  port: 50356
+  password: YG3nrWleyOJy8hUVHF1Nc8vOY0JgKdiT4n627Bj32+8=
+  cipher: 2022-blake3-chacha20-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇺🇸 美国 03
+  server: 38.143.66.146
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇺🇸 美国 04
+  server: 167.88.62.203
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇺🇸 美国 05
+  server: 67.220.73.247
+  port: 443
+  password: DGjtV63aPW3E
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇺🇸 美国 06
+  server: 156.146.38.170
   port: 443
   password: shadowsocks
   cipher: aes-128-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇺🇸 美国 07
+  server: 216.106.178.169
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇺🇸 美国 08
+  server: 67.220.73.178
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇺🇸 美国 09
+  server: 23.150.152.38
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇺🇸 美国 10
+  server: 198.98.53.130
+  port: 443
+  password: eDfN7SODQceIOmIAbtJJtK
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: vmess
+  name: 🇺🇸 美国 11
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  cipher: auto
+  alterId: 0
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇯🇵 日本 04
+  server: 84.247.155.196
+  port: 80
+  password: 3eOFeNssde7PYYMv
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: vmess
+  name: 🇭🇰 香港 02
+  server: zfd-hkv2.kunlun01dns.com
+  port: 16113
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  cipher: auto
+  alterId: 0
   udp: true
   tls: false
   skip-cert-verify: false
@@ -94,277 +257,8 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: false
-- type: vmess
-  name: 🇯🇵 日本 06
-  server: 168.138.43.75
-  port: 80
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  cipher: auto
-  alterId: 0
-  udp: true
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-- type: ss
-  name: 🇺🇸 美国 01
-  server: 95.215.201.18
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇺🇸 美国 02
-  server: 156.146.38.168
-  port: 443
-  password: shadowsocks
-  cipher: aes-128-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- name: 🇺🇸 美国 03
-  type: ss
-  server: 161.153.38.61
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: EP/0kIjk18c43tfkqeJqdVQm8lGArteYkhhwgBJ3q70=
-  udp: true
-- type: ss
-  name: 🇸🇬 新加坡 05
-  server: 149.88.106.74
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇸🇬 新加坡 06
-  server: 15.235.182.183
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇺🇸 美国 04
-  server: 156.146.38.169
-  port: 443
-  password: shadowsocks
-  cipher: aes-128-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- name: 🇺🇸 美国 05
-  type: ss
-  server: 137.131.48.233
-  port: 50356
-  cipher: 2022-blake3-chacha20-poly1305
-  password: a3PPcJa65qkdjt0mH9YBf5j1uAwMP21kNWRPTlI4nFc=
-  udp: true
-- type: ss
-  name: 🇺🇸 美国 06
-  server: 167.88.62.56
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇺🇸 美国 07
-  server: 156.146.38.170
-  port: 443
-  password: shadowsocks
-  cipher: aes-128-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇺🇸 美国 08
-  server: 45.86.51.18
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: vmess
-  name: 🇺🇸 美国 09
-  server: 169.197.142.22
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  cipher: none
-  alterId: 0
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇺🇸 美国 10
-  server: 149.40.57.135
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- name: 🇯🇵 日本 07
-  type: trojan
-  server: v2jp.k1.ssnss.live
-  port: 44184
-  password: d050aca3-9df2-4461-90ec-92373c1d7636
-  udp: true
-  skip-cert-verify: true
-- type: ss
-  name: 🇺🇸 美国 11
-  server: 38.91.100.39
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
 - type: ss
   name: 🇺🇸 美国 12
-  server: 104.238.140.45
-  port: 11051
-  password: JUXsy78dSs6ROkasikmoaL
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇺🇸 美国 13
-  server: 149.40.57.138
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇨🇦 加拿大 01
-  server: 54.39.96.233
-  port: 8080
-  password: 2cvhpvdg4x7mvbps
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇺🇸 美国 14
-  server: 37.19.198.160
-  port: 443
-  password: shadowsocks
-  cipher: aes-128-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇺🇸 美国 15
-  server: 15.204.246.111
-  port: 5498
-  password: lGqs95QkFHo2NV
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇺🇸 美国 16
-  server: 173.244.56.6
-  port: 443
-  password: shadowsocks
-  cipher: aes-128-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇺🇸 美国 17
-  server: 15.204.247.206
-  port: 4444
-  password: pKEW8JPByTVTLtM
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇺🇸 美国 18
-  server: 185.215.132.9
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇺🇸 美国 19
-  server: 185.215.132.18
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇺🇸 美国 20
-  server: 167.88.62.203
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇺🇸 美国 21
-  server: 38.22.17.219
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇺🇸 美国 22
-  server: 38.22.17.214
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇺🇸 美国 23
-  server: 38.121.43.231
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇺🇸 美国 24
-  server: 167.88.63.99
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇺🇸 美国 25
-  server: 15.204.247.124
-  port: 2375
-  password: faBAoD54k87UJG7
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇺🇸 美国 26
   server: 193.151.163.18
   port: 19999
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -373,17 +267,207 @@ proxies:
   tls: false
   skip-cert-verify: false
 - type: ss
-  name: 🇿🇦 南非 01
-  server: 102.37.156.224
+  name: 🇨🇦 加拿大 01
+  server: 184.107.106.78
+  port: 8388
+  password: itzvpn@321
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇺🇸 美国 13
+  server: 149.40.57.134
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇺🇸 美国 14
+  server: 95.215.201.18
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇺🇸 美国 15
+  server: 45.86.51.18
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇨🇦 加拿大 02
+  server: 149.22.95.183
   port: 443
-  password: aduB9HGxQHjA2SBMRjkHX6
+  password: shadowsocks
+  cipher: aes-128-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇺🇸 美国 16
+  server: 137.184.89.151
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: vmess
+  name: 🇸🇬 新加坡 09
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  cipher: auto
+  alterId: 0
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇨🇦 加拿大 03
+  server: 134.195.198.163
+  port: 443
+  password: PmCqK98WqhSC
   cipher: chacha20-ietf-poly1305
   udp: true
   tls: false
   skip-cert-verify: false
 - type: ss
+  name: 🇺🇸 美国 17
+  server: 37.19.198.244
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇺🇸 美国 18
+  server: 156.146.38.169
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: 🇨🇦 加拿大 04
+  type: ss
+  server: 51.79.49.116
+  port: 8882
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+  udp: true
+- type: ss
+  name: 🇨🇦 加拿大 05
+  server: 51.222.141.125
+  port: 445
+  password: zDNVedRFPQexG9v
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: vmess
+  name: 🇭🇰 香港 03
+  server: 206.237.11.17
+  port: 50376
+  uuid: 9091fd64-7e8e-4b7a-8ae7-84474f234926
+  cipher: auto
+  alterId: 0
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇺🇸 美国 19
+  server: 84.20.27.183
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇺🇸 美国 20
+  server: 37.19.198.160
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇺🇸 美国 21
+  server: 38.91.100.39
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇺🇸 美国 22
+  server: 38.128.66.32
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇺🇸 美国 23
+  server: 135.148.42.13
+  port: 8388
+  password: itzvpn@321
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: vmess
+  name: 🇭🇰 香港 04
+  server: dog-hk.kunlun01dns.com
+  port: 21041
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  cipher: auto
+  alterId: 0
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇺🇸 美国 24
+  server: 167.88.62.56
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇺🇸 美国 25
+  server: 193.151.160.18
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇺🇸 美国 26
+  server: 38.22.17.129
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
   name: 🇺🇸 美国 27
-  server: 149.40.57.133
+  server: 193.151.160.9
   port: 19999
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   cipher: aes-256-gcm
@@ -392,40 +476,75 @@ proxies:
   skip-cert-verify: false
 - type: ss
   name: 🇺🇸 美国 28
-  server: 15.204.246.132
-  port: 7307
-  password: FoOiGlkAA9yPEGP
+  server: 38.121.43.18
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   cipher: aes-256-gcm
   udp: true
   tls: false
   skip-cert-verify: false
 - type: ss
-  name: 🇨🇦 加拿大 02
-  server: 15.235.121.109
-  port: 8080
-  password: 575hiopq2h28yao6
+  name: 🇺🇸 美国 29
+  server: 138.197.89.234
+  port: 28960
+  password: DZRy4Q3QH0jUGfKFl2jDCZ
   cipher: chacha20-ietf-poly1305
   udp: true
   tls: false
   skip-cert-verify: false
 - type: ss
-  name: 🇬🇧 英国 01
-  server: 129.151.85.67
-  port: 61312
-  password: nwDYta2/EsXhz961zgcHEDq/CzydqTgLEfmE3BHj3uU=
-  cipher: 2022-blake3-chacha20-poly1305
+  name: 🇺🇸 美国 30
+  server: 149.40.57.133
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
   udp: true
   tls: false
   skip-cert-verify: false
-- name: 🇳🇱 荷兰 01
-  type: ss
-  server: 158.101.205.73
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: yoow9zuAW2IUx29EL25NzX29/xx20FpSEKOsnu/TnBE=
-  udp: true
 - type: ss
-  name: 🇺🇸 美国 29
+  name: 🇺🇸 美国 31
+  server: 38.22.17.214
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇺🇸 美国 32
+  server: 185.230.230.18
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: vless
+  name: 🇸🇬 新加坡 10
+  server: 67.159.52.81
+  port: 443
+  uuid: a16bd0e2-ff2e-4e4c-a955-0c684255a065
+  flow: xtls-rprx-vision
+  udp: true
+  tls: true
+  servername: sg.fasti.win
+  sni: sg.fasti.win
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: -YTGWg5DjsLDyaDfr1D83kiUK22LVcrK3yC53lqqigs
+    short-id: feedbacc
+- type: ss
+  name: 🇺🇸 美国 33
+  server: 162.251.62.31
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇺🇸 美国 34
   server: 37.19.198.236
   port: 443
   password: shadowsocks
@@ -435,150 +554,7 @@ proxies:
   skip-cert-verify: false
 - type: ss
   name: 🇩🇪 德国 01
-  server: 193.108.118.247
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- name: 🇩🇪 德国 02
-  type: ss
-  server: 92.5.114.103
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: GmAn0fXarz+xB3bw2aCzwnZxcNuDx8xpqI+vGufI3jI=
-  udp: true
-- type: ss
-  name: 🇩🇪 德国 03
-  server: 193.108.117.84
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇩🇪 德国 04
-  server: 193.108.117.111
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇬🇧 英国 02
-  server: 82.38.31.180
-  port: 8080
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇩🇪 德国 05
-  server: 23.157.88.43
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇳🇱 荷兰 02
-  server: 193.29.139.212
-  port: 8080
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: vmess
-  name: 🇺🇸 美国 30
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  cipher: none
-  alterId: 0
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇳🇱 荷兰 03
-  server: 193.29.139.198
-  port: 8080
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇬🇧 英国 03
-  server: 178.83.185.156
-  port: 8080
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇬🇧 英国 04
-  server: 82.38.31.162
-  port: 443
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇬🇧 英国 05
-  server: 38.114.120.221
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇬🇧 英国 06
-  server: 82.38.31.182
-  port: 8080
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇺🇸 美国 31
-  server: 156.146.38.167
-  port: 443
-  password: shadowsocks
-  cipher: aes-128-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇬🇧 英国 07
-  server: 82.38.31.156
-  port: 8080
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇫🇷 法国 01
-  server: 167.17.64.22
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇩🇪 德国 06
-  server: 8.211.38.49
+  server: 8.209.73.203
   port: 443
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   cipher: 2022-blake3-chacha20-poly1305
@@ -586,17 +562,8 @@ proxies:
   tls: false
   skip-cert-verify: false
 - type: ss
-  name: 🇺🇸 美国 32
-  server: 172.111.36.123
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇺🇸 美国 33
-  server: 193.151.160.9
+  name: 🇺🇸 美国 35
+  server: 38.91.107.188
   port: 19999
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   cipher: aes-256-gcm
@@ -613,43 +580,26 @@ proxies:
   tls: false
   skip-cert-verify: false
 - type: ss
-  name: 🇬🇧 英国 08
-  server: 82.38.31.66
-  port: 8080
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  cipher: chacha20-ietf-poly1305
+  name: 🇺🇸 美国 36
+  server: 185.215.132.18
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
   udp: true
   tls: false
   skip-cert-verify: false
 - type: ss
-  name: 🇬🇧 英国 09
-  server: 82.38.31.213
-  port: 8080
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 01
-  type: trojan
-  server: 158.247.253.243
+  name: 🇿🇦 南非 01
+  server: 102.37.156.224
   port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  skip-cert-verify: true
-  sni: connectgraduateswithjobopeningsandgrowprofessionally.com
-- type: ss
-  name: 🇳🇱 荷兰 04
-  server: 77.221.132.206
-  port: 24759
-  password: hCgbUnMaoAfSgvE8IKdnGu
+  password: aduB9HGxQHjA2SBMRjkHX6
   cipher: chacha20-ietf-poly1305
   udp: true
   tls: false
   skip-cert-verify: false
 - type: ss
-  name: 🇺🇸 美国 34
-  server: 193.151.160.18
+  name: 🇩🇪 德国 02
+  server: 193.108.117.111
   port: 19999
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   cipher: aes-256-gcm
@@ -657,8 +607,8 @@ proxies:
   tls: false
   skip-cert-verify: false
 - type: ss
-  name: 🇺🇸 美国 35
-  server: 167.88.63.39
+  name: 🇩🇪 德国 03
+  server: 185.176.204.18
   port: 19999
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   cipher: aes-256-gcm
@@ -666,25 +616,7 @@ proxies:
   tls: false
   skip-cert-verify: false
 - type: ss
-  name: 🇬🇧 英国 10
-  server: 82.38.31.178
-  port: 8080
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇳🇱 荷兰 05
-  server: 193.29.139.223
-  port: 8080
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇨🇦 加拿大 03
+  name: 🇨🇦 加拿大 06
   server: 51.222.12.127
   port: 445
   password: zDNVedRFPQexG9v
@@ -693,8 +625,35 @@ proxies:
   tls: false
   skip-cert-verify: false
 - type: ss
-  name: 🇬🇧 英国 11
-  server: 82.38.31.187
+  name: 🇺🇸 美国 37
+  server: 136.148.77.250
+  port: 8388
+  password: itzvpn@321
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇸🇬 新加坡 11
+  server: 15.235.182.183
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇳🇱 荷兰 01
+  server: 158.173.20.171
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 01
+  server: 82.38.31.208
   port: 8080
   password: k1dBOmOB4oqi7Ump37a1bQ
   cipher: chacha20-ietf-poly1305
@@ -702,7 +661,7 @@ proxies:
   tls: false
   skip-cert-verify: false
 - type: ss
-  name: 🇬🇧 英国 12
+  name: 🇬🇧 英国 02
   server: 82.38.31.39
   port: 8080
   password: oZIoA69Q8yhcQV8ka3Pa3A
@@ -710,13 +669,115 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: false
-- name: 🇨🇦 加拿大 04
-  type: ss
-  server: 51.222.141.125
-  port: 445
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
+- type: ss
+  name: 🇩🇪 德国 04
+  server: 47.245.167.223
+  port: 443
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  cipher: 2022-blake3-chacha20-poly1305
   udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 03
+  server: 82.38.31.205
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 04
+  server: 82.38.31.46
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 05
+  server: 82.38.31.156
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 06
+  server: 82.38.31.218
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 07
+  server: 82.38.31.47
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 08
+  server: 82.38.31.204
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇩🇪 德国 05
+  server: 47.245.174.67
+  port: 443
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  cipher: 2022-blake3-chacha20-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇳🇱 荷兰 02
+  server: 144.21.35.158
+  port: 45819
+  password: rx1e8SsjGM7ZKlR0tLnzSWoxhyRRJJrcTccM3uMu+Rc=
+  cipher: 2022-blake3-chacha20-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 09
+  server: 82.38.31.165
+  port: 443
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇳🇱 荷兰 03
+  server: 193.29.139.147
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: trojan
+  name: 🇺🇸 美国 38
+  server: 167.88.61.52
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  tls: true
+  servername: courses.browseseniorrolesandenhanceyourcareertoday.com
+  sni: courses.browseseniorrolesandenhanceyourcareertoday.com
+  skip-cert-verify: false
 - type: ss
   name: 🇺🇦 乌克兰 01
   server: 185.164.175.81
@@ -727,24 +788,8 @@ proxies:
   tls: false
   skip-cert-verify: false
 - type: ss
-  name: 🇺🇸 美国 36
-  server: 162.251.62.31
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- name: 🇮🇹 意大利 01
-  type: ss
-  server: 202.50.253.81
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- type: ss
-  name: 🇬🇧 英国 13
-  server: 82.38.31.184
+  name: 🇬🇧 英国 10
+  server: 82.38.31.187
   port: 8080
   password: k1dBOmOB4oqi7Ump37a1bQ
   cipher: chacha20-ietf-poly1305
@@ -752,8 +797,8 @@ proxies:
   tls: false
   skip-cert-verify: false
 - type: ss
-  name: 🇫🇷 法国 02
-  server: 167.17.64.27
+  name: 🇺🇸 美国 39
+  server: 167.88.63.99
   port: 19999
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   cipher: aes-256-gcm
@@ -761,8 +806,73 @@ proxies:
   tls: false
   skip-cert-verify: false
 - type: ss
-  name: 🇺🇸 美国 37
-  server: 38.91.107.188
+  name: 🇬🇧 英国 11
+  server: 141.98.101.182
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 12
+  server: 82.38.31.189
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 13
+  server: 82.38.31.193
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: trojan
+  name: 🇺🇸 美国 40
+  server: 167.88.61.20
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  tls: true
+  servername: api.browseseniorrolesandenhanceyourcareertoday.com
+  sni: api.browseseniorrolesandenhanceyourcareertoday.com
+  skip-cert-verify: false
+- type: vmess
+  name: 🇺🇸 美国 41
+  server: 38.110.1.246
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  cipher: auto
+  alterId: 0
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 14
+  server: 82.38.31.191
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 15
+  server: 141.98.101.178
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇫🇷 法国 01
+  server: 79.137.99.183
   port: 19999
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   cipher: aes-256-gcm
@@ -770,62 +880,124 @@ proxies:
   tls: false
   skip-cert-verify: false
 - type: ss
-  name: 🇨🇭 瑞士 01
-  server: 186.190.215.251
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
+  name: 🇬🇧 英国 16
+  server: 82.38.31.35
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
   udp: true
   tls: false
   skip-cert-verify: false
+- type: trojan
+  name: 🇺🇸 美国 42
+  server: 167.88.61.175
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  tls: true
+  servername: blog.browseseniorrolesandenhanceyourcareertoday.com
+  sni: blog.browseseniorrolesandenhanceyourcareertoday.com
+  skip-cert-verify: false
 - type: ss
-  name: 🇺🇸 美国 38
+  name: 🇳🇱 荷兰 04
+  server: 193.29.139.198
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: 🇺🇸 美国 43
+  type: ss
   server: 23.230.52.119
   port: 42878
+  cipher: chacha20-ietf-poly1305
   password: ijoUwfdnkz7mX4pWdkSpmEixTZCt2TRm1JDr4BSaBAWkLxYGoXBHXadFKY5D5ZfoVTwqsx46jCmEUDnQUizJDYrM7B5anhnu
+  udp: true
+- type: ss
+  name: 🇨🇭 瑞士 01
+  server: 23.166.88.127
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇺🇸 美国 44
+  server: 38.121.43.225
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇩🇪 德国 06
+  server: 156.67.120.205
+  port: 51628
+  password: 29ZZXVa34x7sC48w9FKQ54UKHiJJGTVgKFppBRgviLrVCAYVVyKZdD3obbpjCyk31V5b2G2d7xzqmaPBFdcheCVB9UQ4ZghF
   cipher: chacha20-ietf-poly1305
   udp: true
   tls: false
   skip-cert-verify: false
 - type: ss
-  name: 🇦🇹 奥地利 01
-  server: 152.53.1.57
-  port: 8388
-  password: AdawffFMHymlasRb0VOP3HFf7sTG5sJx
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇨🇦 加拿大 05
-  server: 15.235.57.6
+  name: 🇳🇱 荷兰 05
+  server: 193.29.139.234
   port: 8080
-  password: kxhnt5jtykd328cg
+  password: 4a2rfixophdjffa8KVA4Aa
   cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇮🇹 意大利 01
+  server: 202.50.253.99
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇺🇸 美国 45
+  server: 38.91.107.57
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 17
+  server: 82.38.31.213
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇺🇸 美国 46
+  server: 38.91.107.19
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇮🇱 以色列 01
+  server: 206.245.128.123
+  port: 18443
+  password: dmJDtsxs41dBer8X+7idvkvMQHqJuwRb
+  cipher: aes-256-gcm
   udp: true
   tls: false
   skip-cert-verify: false
 - type: ss
   name: 🇩🇪 德国 07
-  server: 185.226.172.8
-  port: 8008
-  password: XKFKl2rULjIp74
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇺🇸 美国 39
-  server: 38.121.43.18
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇩🇪 德国 08
-  server: 47.245.173.25
+  server: 8.209.106.54
   port: 443
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   cipher: 2022-blake3-chacha20-poly1305
@@ -833,8 +1005,54 @@ proxies:
   tls: false
   skip-cert-verify: false
 - type: ss
-  name: 🇪🇸 西班牙 01
-  server: 167.17.71.167
+  name: 🇨🇭 瑞士 02
+  server: 208.69.78.133
+  port: 443
+  password: ncIkubmoDGsl
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: vless
+  name: 🇸🇬 新加坡 12
+  server: 47.84.226.221
+  port: 443
+  uuid: 49b91402-f8e3-4390-9d7b-b7eddc2684a4
+  flow: xtls-rprx-vision
+  udp: true
+  tls: true
+  servername: www.samsung.com
+  sni: www.samsung.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: gVQsvRtzd77zlvKW4Gk0dAOJNPRa7cfN1-jVe_AJ8Bo
+    short-id: e1c483f9d4437d42
+- type: ss
+  name: 🇮🇹 意大利 02
+  server: 202.50.253.81
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: vmess
+  name: 🇭🇰 香港 05
+  server: 47.244.120.197
+  port: 23026
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  cipher: auto
+  alterId: 0
+  udp: true
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /arki
+- type: ss
+  name: 🇩🇪 德国 08
+  server: 57.129.83.85
   port: 19999
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   cipher: aes-256-gcm
@@ -842,7 +1060,147 @@ proxies:
   tls: false
   skip-cert-verify: false
 - type: ss
-  name: 🇬🇧 英国 14
+  name: 🇩🇪 德国 09
+  server: 57.129.76.233
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 18
+  server: 82.38.31.192
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: trojan
+  name: 🇦🇺 澳大利亚 01
+  server: 45.63.30.142
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  tls: true
+  servername: connectwithemployerstohireyouridealteam.com
+  sni: connectwithemployerstohireyouridealteam.com
+  skip-cert-verify: false
+- type: ss
+  name: 🇺🇸 美国 47
+  server: 66.163.125.120
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇩🇪 德国 10
+  server: 8.211.57.86
+  port: 443
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  cipher: 2022-blake3-chacha20-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: vless
+  name: 🇺🇸 美国 48
+  server: 15.204.97.197
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  udp: true
+  tls: true
+  servername: fuck.rkn
+  sni: fuck.rkn
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+- type: ss
+  name: 🇩🇪 德国 11
+  server: 193.108.119.3
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 19
+  server: 82.38.31.179
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇺🇸 美国 49
+  server: 15.204.247.244
+  port: 443
+  password: pKEW8JPByTVTLtM
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 20
+  server: 82.38.31.162
+  port: 443
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: 🇳🇱 荷兰 06
+  type: ss
+  server: 158.101.205.73
+  port: 45819
+  cipher: 2022-blake3-chacha20-poly1305
+  password: yoow9zuAW2IUx29EL25NzX29/xx20FpSEKOsnu/TnBE=
+  udp: true
+- type: ss
+  name: 🇬🇧 英国 21
+  server: 82.38.31.202
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 22
+  server: 82.38.31.194
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 23
+  server: 38.114.120.221
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 24
+  server: 142.202.51.22
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 25
   server: 82.38.31.212
   port: 8080
   password: k1dBOmOB4oqi7Ump37a1bQ
@@ -851,8 +1209,8 @@ proxies:
   tls: false
   skip-cert-verify: false
 - type: ss
-  name: 🇯🇵 日本 08
-  server: leviko-sg3477.shopingggg.ir
+  name: 🇩🇪 德国 12
+  server: 193.108.117.84
   port: 19999
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   cipher: aes-256-gcm
@@ -860,8 +1218,26 @@ proxies:
   tls: false
   skip-cert-verify: false
 - type: ss
-  name: 🇬🇧 英国 15
-  server: 82.38.31.215
+  name: 🇬🇧 英国 26
+  server: 82.38.31.62
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇺🇸 美国 50
+  server: 15.204.247.244
+  port: 4444
+  password: pKEW8JPByTVTLtM
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 27
+  server: 82.38.31.176
   port: 8080
   password: k1dBOmOB4oqi7Ump37a1bQ
   cipher: chacha20-ietf-poly1305
@@ -869,21 +1245,85 @@ proxies:
   tls: false
   skip-cert-verify: false
 - type: ss
-  name: 🇩🇪 德国 09
-  server: 185.176.204.18
+  name: 🇬🇧 英国 28
+  server: 82.38.31.199
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 29
+  server: 82.38.31.195
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: trojan
+  name: 🇺🇸 美国 51
+  server: 66.163.112.147
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  tls: true
+  servername: courses.unlockyourfuturefindyourperfectcareer.com
+  sni: courses.unlockyourfuturefindyourperfectcareer.com
+  skip-cert-verify: false
+- type: ss
+  name: 🇫🇷 法国 02
+  server: 167.17.64.22
   port: 19999
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   cipher: aes-256-gcm
   udp: true
   tls: false
   skip-cert-verify: false
-- name: 🇮🇹 意大利 02
-  type: ss
-  server: 202.50.253.27
+- type: ss
+  name: 🇦🇪 阿联酋 02
+  server: 151.241.19.36
   port: 19999
-  cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
   udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 30
+  server: 82.38.31.66
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: 🇩🇪 德国 13
+  type: ss
+  server: 129.159.0.53
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: zpdYERRY+i9wkj3G766aELYAVoITvCv9kKrIGG8ykzY=
+  udp: true
+- type: ss
+  name: 🇳🇱 荷兰 07
+  server: 193.29.139.168
+  port: 8080
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇺🇸 美国 52
+  server: 173.244.56.6
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
 - type: vmess
   name: 🇰🇷 韩国 02
   server: 132.145.80.230
@@ -893,78 +1333,31 @@ proxies:
   alterId: 0
   udp: true
   tls: false
-  servername: 132.145.80.230
-  sni: 132.145.80.230
   skip-cert-verify: false
   network: ws
   ws-opts:
     path: /cctv13.m3u8
-    headers:
-      Host: 132.145.80.230
-- name: 🇮🇹 意大利 03
-  type: ss
-  server: 202.50.253.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 - type: ss
-  name: 🇺🇸 美国 40
-  server: 23.150.152.38
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇬🇧 英国 16
-  server: 82.38.31.208
+  name: 🇬🇧 英国 31
+  server: 82.38.31.207
   port: 8080
   password: k1dBOmOB4oqi7Ump37a1bQ
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇺🇸 美国 41
-  server: 137.184.89.151
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇬🇧 英国 17
-  server: 82.38.31.210
-  port: 8080
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇳🇱 荷兰 06
-  server: 193.29.139.235
-  port: 443
-  password: oZIoA69Q8yhcQV8ka3Pa3A
   cipher: chacha20-ietf-poly1305
   udp: true
   tls: false
   skip-cert-verify: false
 - type: ss
   name: 🇫🇷 法国 03
-  server: 172.99.189.142
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  server: 107.161.160.28
+  port: 8388
+  password: itzvpn@321
   cipher: aes-256-gcm
   udp: true
   tls: false
   skip-cert-verify: false
 - type: ss
-  name: 🇬🇧 英国 18
-  server: 82.38.31.203
+  name: 🇬🇧 英国 32
+  server: 82.38.31.180
   port: 8080
   password: k1dBOmOB4oqi7Ump37a1bQ
   cipher: chacha20-ietf-poly1305
@@ -972,35 +1365,8 @@ proxies:
   tls: false
   skip-cert-verify: false
 - type: ss
-  name: 🇬🇧 英国 19
-  server: 82.38.31.165
-  port: 443
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇬🇧 英国 20
-  server: 82.38.31.194
-  port: 8080
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇩🇪 德国 10
-  server: 47.254.174.203
-  port: 443
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  cipher: 2022-blake3-chacha20-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇳🇱 荷兰 07
-  server: 158.173.20.171
+  name: 🇺🇸 美国 53
+  server: 156.146.38.168
   port: 443
   password: shadowsocks
   cipher: aes-128-gcm
@@ -1008,8 +1374,8 @@ proxies:
   tls: false
   skip-cert-verify: false
 - type: ss
-  name: 🇬🇧 英国 21
-  server: 82.38.31.176
+  name: 🇬🇧 英国 33
+  server: 82.38.31.216
   port: 8080
   password: k1dBOmOB4oqi7Ump37a1bQ
   cipher: chacha20-ietf-poly1305
@@ -1017,8 +1383,8 @@ proxies:
   tls: false
   skip-cert-verify: false
 - type: ss
-  name: 🇬🇧 英国 22
-  server: 82.38.31.62
+  name: 🇬🇧 英国 34
+  server: 82.38.31.48
   port: 8080
   password: oZIoA69Q8yhcQV8ka3Pa3A
   cipher: chacha20-ietf-poly1305
@@ -1026,17 +1392,26 @@ proxies:
   tls: false
   skip-cert-verify: false
 - type: ss
-  name: 🇬🇧 英国 23
-  server: 82.38.31.186
-  port: 8080
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  cipher: chacha20-ietf-poly1305
+  name: 🇬🇧 英国 35
+  server: 198.244.202.215
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
   udp: true
   tls: false
   skip-cert-verify: false
 - type: ss
-  name: 🇦🇪 阿联酋 02
-  server: 151.241.19.36
+  name: 🇮🇹 意大利 03
+  server: 57.131.27.21
+  port: 8388
+  password: itzvpn@321
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 36
+  server: 185.176.206.9
   port: 19999
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   cipher: aes-256-gcm
@@ -1052,180 +1427,29 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: false
-- type: ss
-  name: 🇬🇧 英国 24
-  server: 82.38.31.202
-  port: 8080
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇬🇧 英国 25
-  server: 82.38.31.47
-  port: 8080
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇬🇧 英国 26
-  server: 82.38.31.35
-  port: 8080
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇪🇸 西班牙 02
-  server: 79.127.139.242
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇬🇧 英国 27
-  server: 82.38.31.205
-  port: 8080
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇩🇪 德国 11
-  server: 213.202.208.199
-  port: 5000
-  password: Y6R9pAtvxxzmGC
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇬🇧 英国 28
-  server: 158.173.24.73
+- type: trojan
+  name: 🇺🇸 美国 54
+  server: 216.106.186.32
   port: 443
-  password: shadowsocks
-  cipher: aes-128-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇺🇸 美国 42
-  server: 149.40.57.134
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇩🇪 德国 12
-  server: 47.245.174.67
-  port: 443
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  cipher: 2022-blake3-chacha20-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇺🇸 美国 43
-  server: 38.22.17.139
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇬🇧 英国 29
-  server: 82.38.31.214
-  port: 8080
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇬🇧 英国 30
-  server: 82.38.31.207
-  port: 8080
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇨🇭 瑞士 02
-  server: 23.166.88.127
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇫🇷 法国 05
-  server: 79.137.99.183
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇬🇧 英国 31
-  server: 82.38.31.61
-  port: 8080
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇨🇭 瑞士 03
-  server: 79.127.184.104
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: vmess
-  name: 🇺🇸 美国 44
-  server: 162.159.135.234
-  port: 2083
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  cipher: auto
-  alterId: 0
+  password: dba20dcb635e430fa4d3bfc303a149d2
   udp: true
   tls: true
-  servername: or3.sfacg.uk
-  sni: or3.sfacg.uk
+  servername: blog.findlocaljobnetworkandbuildcommunityconnections.com
+  sni: blog.findlocaljobnetworkandbuildcommunityconnections.com
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /or3
-    headers:
-      Host: or3.sfacg.uk
 - type: trojan
-  name: 🇺🇸 美国 45
+  name: 🇺🇸 美国 55
   server: 216.106.186.66
   port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  password: 242a3d8eee5e4ed1a6bfa4141d549a25
   udp: true
   tls: true
   servername: www.findlocaljobnetworkandbuildcommunityconnections.com
   sni: www.findlocaljobnetworkandbuildcommunityconnections.com
   skip-cert-verify: false
 - type: ss
-  name: 🇬🇧 英国 32
-  server: 82.38.31.204
+  name: 🇬🇧 英国 37
+  server: 82.38.31.178
   port: 8080
   password: k1dBOmOB4oqi7Ump37a1bQ
   cipher: chacha20-ietf-poly1305
@@ -1233,146 +1457,7 @@ proxies:
   tls: false
   skip-cert-verify: false
 - type: ss
-  name: 🇩🇪 德国 13
-  server: 57.129.83.85
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇺🇸 美国 46
-  server: 216.172.144.199
-  port: 40643
-  password: Xd4G9xn7AgT88msCYC9MZfavMUqd3dWFNAvswi6KfaD9YcexptMbPn4cSECEMzDgvAMomAWJHyweqJer99ssMVYGH6TK8k4c
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇪🇸 西班牙 03
-  server: 66.163.118.103
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇮🇳 印度 01
-  server: 172.105.39.124
-  port: 7002
-  password: RexnBgU7EV5ADxG
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- name: 🇮🇹 意大利 04
-  type: ss
-  server: 202.50.253.99
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 美国 47
-  type: ss
-  server: 47.85.162.44
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA=
-  udp: true
-- type: trojan
-  name: 🇺🇸 美国 48
-  server: 167.88.61.175
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  tls: true
-  servername: blog.browseseniorrolesandenhanceyourcareertoday.com
-  sni: blog.browseseniorrolesandenhanceyourcareertoday.com
-  skip-cert-verify: false
-- type: ss
-  name: 🇬🇧 英国 33
-  server: 82.38.31.192
-  port: 8080
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: vless
-  name: 🇯🇵 日本 09
-  server: 207.65.189.9
-  port: 443
-  uuid: 57715fc4-f787-4e90-9eb2-53fa515fbf37
-  udp: true
-  tls: true
-  servername: spsudu.pages.dev
-  sni: spsudu.pages.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: spsudu.pages.dev
-- type: ss
-  name: 🇳🇱 荷兰 08
-  server: 193.29.139.168
-  port: 8080
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇭🇰 香港 02
-  server: 213.176.92.148
-  port: 40647
-  password: DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇩🇪 德国 14
-  server: leviko-de3534.shopingggg.ir
-  port: 443
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  cipher: 2022-blake3-chacha20-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇩🇪 德国 15
-  server: 77.90.10.175
-  port: 8086
-  password: f2Nq5YLnyclPaWR8my7/Vdd3ZX8URncXZNly5+HcUSs=:dQ6WYcPpGX5xIxUVPAR8w1A9eY6kEVoKKW3HleJ6o8Y=
-  cipher: 2022-blake3-aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇺🇸 美国 49
-  server: 38.22.17.129
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇬🇧 英国 34
-  server: 82.38.31.46
-  port: 8080
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇬🇧 英国 35
+  name: 🇬🇧 英国 38
   server: 82.38.31.49
   port: 8080
   password: oZIoA69Q8yhcQV8ka3Pa3A
@@ -1381,72 +1466,20 @@ proxies:
   tls: false
   skip-cert-verify: false
 - type: ss
-  name: 🇬🇧 英国 36
-  server: 141.98.101.178
-  port: 443
-  password: shadowsocks
-  cipher: aes-128-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇬🇧 英国 37
-  server: 82.38.31.206
-  port: 8080
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇩🇪 德国 16
-  server: 193.108.119.3
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇬🇧 英国 38
-  server: 82.38.31.219
-  port: 8080
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇺🇸 美国 50
-  server: 66.163.125.120
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
   name: 🇬🇧 英国 39
-  server: 198.244.201.129
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
+  server: 82.38.31.203
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
   udp: true
   tls: false
   skip-cert-verify: false
-- name: 🇮🇹 意大利 05
-  type: ss
-  server: 202.50.253.90
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 - type: ss
-  name: 🇩🇪 德国 17
-  server: 57.129.76.233
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
+  name: 🇬🇧 英国 40
+  server: 82.38.31.185
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
   udp: true
   tls: false
   skip-cert-verify: false
@@ -1461,17 +1494,17 @@ proxy-groups:
   - 🇯🇵 日本 03
   - 🇭🇰 香港 01
   - 🇸🇬 新加坡 01
+  - 🇰🇷 韩国 01
   - 🇸🇬 新加坡 02
   - 🇸🇬 新加坡 03
   - 🇸🇬 新加坡 04
-  - 🇯🇵 日本 04
-  - 🇯🇵 日本 05
-  - 🇯🇵 日本 06
+  - 🇸🇬 新加坡 05
   - 🇺🇸 美国 01
+  - 🇸🇬 新加坡 06
+  - 🇸🇬 新加坡 07
+  - 🇸🇬 新加坡 08
   - 🇺🇸 美国 02
   - 🇺🇸 美国 03
-  - 🇸🇬 新加坡 05
-  - 🇸🇬 新加坡 06
   - 🇺🇸 美国 04
   - 🇺🇸 美国 05
   - 🇺🇸 美国 06
@@ -1479,143 +1512,143 @@ proxy-groups:
   - 🇺🇸 美国 08
   - 🇺🇸 美国 09
   - 🇺🇸 美国 10
-  - 🇯🇵 日本 07
   - 🇺🇸 美国 11
+  - 🇯🇵 日本 04
+  - 🇭🇰 香港 02
+  - 🇯🇵 日本 05
   - 🇺🇸 美国 12
-  - 🇺🇸 美国 13
   - 🇨🇦 加拿大 01
+  - 🇺🇸 美国 13
   - 🇺🇸 美国 14
   - 🇺🇸 美国 15
+  - 🇨🇦 加拿大 02
   - 🇺🇸 美国 16
+  - 🇸🇬 新加坡 09
+  - 🇨🇦 加拿大 03
   - 🇺🇸 美国 17
   - 🇺🇸 美国 18
+  - 🇨🇦 加拿大 04
+  - 🇨🇦 加拿大 05
+  - 🇭🇰 香港 03
   - 🇺🇸 美国 19
   - 🇺🇸 美国 20
   - 🇺🇸 美国 21
   - 🇺🇸 美国 22
   - 🇺🇸 美国 23
+  - 🇭🇰 香港 04
   - 🇺🇸 美国 24
   - 🇺🇸 美国 25
   - 🇺🇸 美国 26
-  - 🇿🇦 南非 01
   - 🇺🇸 美国 27
   - 🇺🇸 美国 28
-  - 🇨🇦 加拿大 02
-  - 🇬🇧 英国 01
-  - 🇳🇱 荷兰 01
   - 🇺🇸 美国 29
+  - 🇺🇸 美国 30
+  - 🇺🇸 美国 31
+  - 🇺🇸 美国 32
+  - 🇸🇬 新加坡 10
+  - 🇺🇸 美国 33
+  - 🇺🇸 美国 34
   - 🇩🇪 德国 01
+  - 🇺🇸 美国 35
+  - 🇦🇪 阿联酋 01
+  - 🇺🇸 美国 36
+  - 🇿🇦 南非 01
   - 🇩🇪 德国 02
   - 🇩🇪 德国 03
-  - 🇩🇪 德国 04
+  - 🇨🇦 加拿大 06
+  - 🇺🇸 美国 37
+  - 🇸🇬 新加坡 11
+  - 🇳🇱 荷兰 01
+  - 🇬🇧 英国 01
   - 🇬🇧 英国 02
-  - 🇩🇪 德国 05
-  - 🇳🇱 荷兰 02
-  - 🇺🇸 美国 30
-  - 🇳🇱 荷兰 03
+  - 🇩🇪 德国 04
   - 🇬🇧 英国 03
   - 🇬🇧 英国 04
   - 🇬🇧 英国 05
   - 🇬🇧 英国 06
-  - 🇺🇸 美国 31
   - 🇬🇧 英国 07
-  - 🇫🇷 法国 01
-  - 🇩🇪 德国 06
-  - 🇺🇸 美国 32
-  - 🇺🇸 美国 33
-  - 🇦🇪 阿联酋 01
   - 🇬🇧 英国 08
+  - 🇩🇪 德国 05
+  - 🇳🇱 荷兰 02
   - 🇬🇧 英国 09
-  - 🇰🇷 韩国 01
-  - 🇳🇱 荷兰 04
-  - 🇺🇸 美国 34
-  - 🇺🇸 美国 35
+  - 🇳🇱 荷兰 03
+  - 🇺🇸 美国 38
+  - 🇺🇦 乌克兰 01
   - 🇬🇧 英国 10
-  - 🇳🇱 荷兰 05
-  - 🇨🇦 加拿大 03
+  - 🇺🇸 美国 39
   - 🇬🇧 英国 11
   - 🇬🇧 英国 12
-  - 🇨🇦 加拿大 04
-  - 🇺🇦 乌克兰 01
-  - 🇺🇸 美国 36
-  - 🇮🇹 意大利 01
   - 🇬🇧 英国 13
-  - 🇫🇷 法国 02
-  - 🇺🇸 美国 37
-  - 🇨🇭 瑞士 01
-  - 🇺🇸 美国 38
-  - 🇦🇹 奥地利 01
-  - 🇨🇦 加拿大 05
-  - 🇩🇪 德国 07
-  - 🇺🇸 美国 39
-  - 🇩🇪 德国 08
-  - 🇪🇸 西班牙 01
-  - 🇬🇧 英国 14
-  - 🇯🇵 日本 08
-  - 🇬🇧 英国 15
-  - 🇩🇪 德国 09
-  - 🇮🇹 意大利 02
-  - 🇰🇷 韩国 02
-  - 🇮🇹 意大利 03
   - 🇺🇸 美国 40
-  - 🇬🇧 英国 16
   - 🇺🇸 美国 41
+  - 🇬🇧 英国 14
+  - 🇬🇧 英国 15
+  - 🇫🇷 法国 01
+  - 🇬🇧 英国 16
+  - 🇺🇸 美国 42
+  - 🇳🇱 荷兰 04
+  - 🇺🇸 美国 43
+  - 🇨🇭 瑞士 01
+  - 🇺🇸 美国 44
+  - 🇩🇪 德国 06
+  - 🇳🇱 荷兰 05
+  - 🇮🇹 意大利 01
+  - 🇺🇸 美国 45
   - 🇬🇧 英国 17
-  - 🇳🇱 荷兰 06
-  - 🇫🇷 法国 03
+  - 🇺🇸 美国 46
+  - 🇮🇱 以色列 01
+  - 🇩🇪 德国 07
+  - 🇨🇭 瑞士 02
+  - 🇸🇬 新加坡 12
+  - 🇮🇹 意大利 02
+  - 🇭🇰 香港 05
+  - 🇩🇪 德国 08
+  - 🇩🇪 德国 09
   - 🇬🇧 英国 18
-  - 🇬🇧 英国 19
-  - 🇬🇧 英国 20
+  - 🇦🇺 澳大利亚 01
+  - 🇺🇸 美国 47
   - 🇩🇪 德国 10
-  - 🇳🇱 荷兰 07
+  - 🇺🇸 美国 48
+  - 🇩🇪 德国 11
+  - 🇬🇧 英国 19
+  - 🇺🇸 美国 49
+  - 🇬🇧 英国 20
+  - 🇳🇱 荷兰 06
   - 🇬🇧 英国 21
   - 🇬🇧 英国 22
   - 🇬🇧 英国 23
-  - 🇦🇪 阿联酋 02
-  - 🇫🇷 法国 04
   - 🇬🇧 英国 24
   - 🇬🇧 英国 25
-  - 🇬🇧 英国 26
-  - 🇪🇸 西班牙 02
-  - 🇬🇧 英国 27
-  - 🇩🇪 德国 11
-  - 🇬🇧 英国 28
-  - 🇺🇸 美国 42
   - 🇩🇪 德国 12
-  - 🇺🇸 美国 43
+  - 🇬🇧 英国 26
+  - 🇺🇸 美国 50
+  - 🇬🇧 英国 27
+  - 🇬🇧 英国 28
   - 🇬🇧 英国 29
+  - 🇺🇸 美国 51
+  - 🇫🇷 法国 02
+  - 🇦🇪 阿联酋 02
   - 🇬🇧 英国 30
-  - 🇨🇭 瑞士 02
-  - 🇫🇷 法国 05
-  - 🇬🇧 英国 31
-  - 🇨🇭 瑞士 03
-  - 🇺🇸 美国 44
-  - 🇺🇸 美国 45
-  - 🇬🇧 英国 32
   - 🇩🇪 德国 13
-  - 🇺🇸 美国 46
-  - 🇪🇸 西班牙 03
-  - 🇮🇳 印度 01
-  - 🇮🇹 意大利 04
-  - 🇺🇸 美国 47
-  - 🇺🇸 美国 48
+  - 🇳🇱 荷兰 07
+  - 🇺🇸 美国 52
+  - 🇰🇷 韩国 02
+  - 🇬🇧 英国 31
+  - 🇫🇷 法国 03
+  - 🇬🇧 英国 32
+  - 🇺🇸 美国 53
   - 🇬🇧 英国 33
-  - 🇯🇵 日本 09
-  - 🇳🇱 荷兰 08
-  - 🇭🇰 香港 02
-  - 🇩🇪 德国 14
-  - 🇩🇪 德国 15
-  - 🇺🇸 美国 49
   - 🇬🇧 英国 34
   - 🇬🇧 英国 35
+  - 🇮🇹 意大利 03
   - 🇬🇧 英国 36
+  - 🇫🇷 法国 04
+  - 🇺🇸 美国 54
+  - 🇺🇸 美国 55
   - 🇬🇧 英国 37
-  - 🇩🇪 德国 16
   - 🇬🇧 英国 38
-  - 🇺🇸 美国 50
   - 🇬🇧 英国 39
-  - 🇮🇹 意大利 05
-  - 🇩🇪 德国 17
+  - 🇬🇧 英国 40
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -1627,17 +1660,17 @@ proxy-groups:
   - 🇯🇵 日本 03
   - 🇭🇰 香港 01
   - 🇸🇬 新加坡 01
+  - 🇰🇷 韩国 01
   - 🇸🇬 新加坡 02
   - 🇸🇬 新加坡 03
   - 🇸🇬 新加坡 04
-  - 🇯🇵 日本 04
-  - 🇯🇵 日本 05
-  - 🇯🇵 日本 06
+  - 🇸🇬 新加坡 05
   - 🇺🇸 美国 01
+  - 🇸🇬 新加坡 06
+  - 🇸🇬 新加坡 07
+  - 🇸🇬 新加坡 08
   - 🇺🇸 美国 02
   - 🇺🇸 美国 03
-  - 🇸🇬 新加坡 05
-  - 🇸🇬 新加坡 06
   - 🇺🇸 美国 04
   - 🇺🇸 美国 05
   - 🇺🇸 美国 06
@@ -1645,142 +1678,142 @@ proxy-groups:
   - 🇺🇸 美国 08
   - 🇺🇸 美国 09
   - 🇺🇸 美国 10
-  - 🇯🇵 日本 07
   - 🇺🇸 美国 11
+  - 🇯🇵 日本 04
+  - 🇭🇰 香港 02
+  - 🇯🇵 日本 05
   - 🇺🇸 美国 12
-  - 🇺🇸 美国 13
   - 🇨🇦 加拿大 01
+  - 🇺🇸 美国 13
   - 🇺🇸 美国 14
   - 🇺🇸 美国 15
+  - 🇨🇦 加拿大 02
   - 🇺🇸 美国 16
+  - 🇸🇬 新加坡 09
+  - 🇨🇦 加拿大 03
   - 🇺🇸 美国 17
   - 🇺🇸 美国 18
+  - 🇨🇦 加拿大 04
+  - 🇨🇦 加拿大 05
+  - 🇭🇰 香港 03
   - 🇺🇸 美国 19
   - 🇺🇸 美国 20
   - 🇺🇸 美国 21
   - 🇺🇸 美国 22
   - 🇺🇸 美国 23
+  - 🇭🇰 香港 04
   - 🇺🇸 美国 24
   - 🇺🇸 美国 25
   - 🇺🇸 美国 26
-  - 🇿🇦 南非 01
   - 🇺🇸 美国 27
   - 🇺🇸 美国 28
-  - 🇨🇦 加拿大 02
-  - 🇬🇧 英国 01
-  - 🇳🇱 荷兰 01
   - 🇺🇸 美国 29
+  - 🇺🇸 美国 30
+  - 🇺🇸 美国 31
+  - 🇺🇸 美国 32
+  - 🇸🇬 新加坡 10
+  - 🇺🇸 美国 33
+  - 🇺🇸 美国 34
   - 🇩🇪 德国 01
+  - 🇺🇸 美国 35
+  - 🇦🇪 阿联酋 01
+  - 🇺🇸 美国 36
+  - 🇿🇦 南非 01
   - 🇩🇪 德国 02
   - 🇩🇪 德国 03
-  - 🇩🇪 德国 04
+  - 🇨🇦 加拿大 06
+  - 🇺🇸 美国 37
+  - 🇸🇬 新加坡 11
+  - 🇳🇱 荷兰 01
+  - 🇬🇧 英国 01
   - 🇬🇧 英国 02
-  - 🇩🇪 德国 05
-  - 🇳🇱 荷兰 02
-  - 🇺🇸 美国 30
-  - 🇳🇱 荷兰 03
+  - 🇩🇪 德国 04
   - 🇬🇧 英国 03
   - 🇬🇧 英国 04
   - 🇬🇧 英国 05
   - 🇬🇧 英国 06
-  - 🇺🇸 美国 31
   - 🇬🇧 英国 07
-  - 🇫🇷 法国 01
-  - 🇩🇪 德国 06
-  - 🇺🇸 美国 32
-  - 🇺🇸 美国 33
-  - 🇦🇪 阿联酋 01
   - 🇬🇧 英国 08
+  - 🇩🇪 德国 05
+  - 🇳🇱 荷兰 02
   - 🇬🇧 英国 09
-  - 🇰🇷 韩国 01
-  - 🇳🇱 荷兰 04
-  - 🇺🇸 美国 34
-  - 🇺🇸 美国 35
+  - 🇳🇱 荷兰 03
+  - 🇺🇸 美国 38
+  - 🇺🇦 乌克兰 01
   - 🇬🇧 英国 10
-  - 🇳🇱 荷兰 05
-  - 🇨🇦 加拿大 03
+  - 🇺🇸 美国 39
   - 🇬🇧 英国 11
   - 🇬🇧 英国 12
-  - 🇨🇦 加拿大 04
-  - 🇺🇦 乌克兰 01
-  - 🇺🇸 美国 36
-  - 🇮🇹 意大利 01
   - 🇬🇧 英国 13
-  - 🇫🇷 法国 02
-  - 🇺🇸 美国 37
-  - 🇨🇭 瑞士 01
-  - 🇺🇸 美国 38
-  - 🇦🇹 奥地利 01
-  - 🇨🇦 加拿大 05
-  - 🇩🇪 德国 07
-  - 🇺🇸 美国 39
-  - 🇩🇪 德国 08
-  - 🇪🇸 西班牙 01
-  - 🇬🇧 英国 14
-  - 🇯🇵 日本 08
-  - 🇬🇧 英国 15
-  - 🇩🇪 德国 09
-  - 🇮🇹 意大利 02
-  - 🇰🇷 韩国 02
-  - 🇮🇹 意大利 03
   - 🇺🇸 美国 40
-  - 🇬🇧 英国 16
   - 🇺🇸 美国 41
+  - 🇬🇧 英国 14
+  - 🇬🇧 英国 15
+  - 🇫🇷 法国 01
+  - 🇬🇧 英国 16
+  - 🇺🇸 美国 42
+  - 🇳🇱 荷兰 04
+  - 🇺🇸 美国 43
+  - 🇨🇭 瑞士 01
+  - 🇺🇸 美国 44
+  - 🇩🇪 德国 06
+  - 🇳🇱 荷兰 05
+  - 🇮🇹 意大利 01
+  - 🇺🇸 美国 45
   - 🇬🇧 英国 17
-  - 🇳🇱 荷兰 06
-  - 🇫🇷 法国 03
+  - 🇺🇸 美国 46
+  - 🇮🇱 以色列 01
+  - 🇩🇪 德国 07
+  - 🇨🇭 瑞士 02
+  - 🇸🇬 新加坡 12
+  - 🇮🇹 意大利 02
+  - 🇭🇰 香港 05
+  - 🇩🇪 德国 08
+  - 🇩🇪 德国 09
   - 🇬🇧 英国 18
-  - 🇬🇧 英国 19
-  - 🇬🇧 英国 20
+  - 🇦🇺 澳大利亚 01
+  - 🇺🇸 美国 47
   - 🇩🇪 德国 10
-  - 🇳🇱 荷兰 07
+  - 🇺🇸 美国 48
+  - 🇩🇪 德国 11
+  - 🇬🇧 英国 19
+  - 🇺🇸 美国 49
+  - 🇬🇧 英国 20
+  - 🇳🇱 荷兰 06
   - 🇬🇧 英国 21
   - 🇬🇧 英国 22
   - 🇬🇧 英国 23
-  - 🇦🇪 阿联酋 02
-  - 🇫🇷 法国 04
   - 🇬🇧 英国 24
   - 🇬🇧 英国 25
-  - 🇬🇧 英国 26
-  - 🇪🇸 西班牙 02
-  - 🇬🇧 英国 27
-  - 🇩🇪 德国 11
-  - 🇬🇧 英国 28
-  - 🇺🇸 美国 42
   - 🇩🇪 德国 12
-  - 🇺🇸 美国 43
+  - 🇬🇧 英国 26
+  - 🇺🇸 美国 50
+  - 🇬🇧 英国 27
+  - 🇬🇧 英国 28
   - 🇬🇧 英国 29
+  - 🇺🇸 美国 51
+  - 🇫🇷 法国 02
+  - 🇦🇪 阿联酋 02
   - 🇬🇧 英国 30
-  - 🇨🇭 瑞士 02
-  - 🇫🇷 法国 05
-  - 🇬🇧 英国 31
-  - 🇨🇭 瑞士 03
-  - 🇺🇸 美国 44
-  - 🇺🇸 美国 45
-  - 🇬🇧 英国 32
   - 🇩🇪 德国 13
-  - 🇺🇸 美国 46
-  - 🇪🇸 西班牙 03
-  - 🇮🇳 印度 01
-  - 🇮🇹 意大利 04
-  - 🇺🇸 美国 47
-  - 🇺🇸 美国 48
+  - 🇳🇱 荷兰 07
+  - 🇺🇸 美国 52
+  - 🇰🇷 韩国 02
+  - 🇬🇧 英国 31
+  - 🇫🇷 法国 03
+  - 🇬🇧 英国 32
+  - 🇺🇸 美国 53
   - 🇬🇧 英国 33
-  - 🇯🇵 日本 09
-  - 🇳🇱 荷兰 08
-  - 🇭🇰 香港 02
-  - 🇩🇪 德国 14
-  - 🇩🇪 德国 15
-  - 🇺🇸 美国 49
   - 🇬🇧 英国 34
   - 🇬🇧 英国 35
+  - 🇮🇹 意大利 03
   - 🇬🇧 英国 36
+  - 🇫🇷 法国 04
+  - 🇺🇸 美国 54
+  - 🇺🇸 美国 55
   - 🇬🇧 英国 37
-  - 🇩🇪 德国 16
   - 🇬🇧 英国 38
-  - 🇺🇸 美国 50
   - 🇬🇧 英国 39
-  - 🇮🇹 意大利 05
-  - 🇩🇪 德国 17
+  - 🇬🇧 英国 40
 rules:
 - MATCH,🚀 节点选择
